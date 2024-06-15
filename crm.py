@@ -68,9 +68,10 @@ def solo_speed_contest():
     contest["href"] = f"https://vjudge.net/contest/{contest_id}"
 
     current_time = datetime.now()
+
     unix_time = int(current_time.timestamp())
     unix_time *= 1000
-    contest["unix_time"] = unix_time
+    contest["unix_time"] = contest_start_time 
     if unix_time < contest_start_time:
         return contest
     else:
