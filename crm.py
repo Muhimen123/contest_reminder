@@ -114,7 +114,7 @@ def template_print(contest):
 Contest reminder for {contest_name}
 Starts at: {start_time}
 Duration: {hours} hours {minutes} minutes
-Link: {contest_link}"""
+Contest Link: {contest_link}"""
     print(announcement)
 
 
